@@ -1,19 +1,10 @@
-const description =
-  "This is the description of your NFT project, remember to replace this";
-const baseUri = "https://hashlips/nft";
+const description = "Astronout NFT Artwork";
+const baseUri = "https://codingwithdidem/nft";
 
 const layerConfigurations = [
   {
     growEditionSizeTo: 20,
-    layersOrder: [
-      { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
-    ],
+    layersOrder: [{ name: "Hold" }, { name: "Dress" }, { name: "Helmet" }],
   },
 ];
 
@@ -23,7 +14,7 @@ const format = {
 };
 
 const background = {
-  generate: true,
+  generate: false,
   brightness: "80%",
 };
 

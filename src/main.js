@@ -125,7 +125,13 @@ const loadLayerImg = async (_layer) => {
 };
 
 const drawElement = (_element) => {
-  ctx.drawImage(_element.loadedImage, 0, 0, format.width, format.height);
+  let posY =
+    _element.layer.name === "Helmet"
+      ? 40
+      : _element.layer.name === "Hold"
+      ? 300
+      : 220;
+  ctx.drawImage(_element.loadedImage, 0, posY, 200, 200);
   addAttributes(_element);
 };
 
